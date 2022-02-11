@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
     $(window).scroll(function() {
-        if ($(window).scrollTop() === $(document).height() - $(window).height()) {
+        if ($(document).scrollTop() >= $("#productRow").height() - $(".product-item").height()) {
             getData();
         }
     });
